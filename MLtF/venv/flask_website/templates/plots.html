@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block plots %}
+<title> Demo for plots using Python Flask! </title>
+
+<p>This is a sample plot</p>
+<body>
+<img src="data:image/png;base64, {{ plot_url }}">
+<p>Source: Created using numerical simulations</p>
+</body>
+
+{% endblock %}

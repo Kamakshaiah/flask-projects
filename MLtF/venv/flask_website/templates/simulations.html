@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block datasim %}
+
+<!-- <div>
+<form class="" action="table" method="get">
+  <label for="">Discrete Variable:</label><br>
+  <input type="number" name="discrete" value="5"><br>
+  <label for="">Continous:</label><br>
+  <input type="number" name="continous" value="5"><br>
+  <label for="">No. of Rows:</label><br>
+  <input type="number" name="m" value="10"><br>
+  <label for="">No. of Columns:</label><br>
+  <input type="number" name="n" value="5"><br>
+  <input type="radio" name="vector" value="Vector"> Vector <br>
+  <input type="radio" name="matrix" value="Matrix"> Matrix <br> <br>
+  <input type="submit" name="submit" value="Submit">
+  </form>
+</div> -->
+
+<form class="" action="table" method="post">
+  <table>
+    {% for field in form %}
+      <tr>
+        <td>{{ field.name }}</td> <td>{{ field }}</td>
+        <td>{{ field.lable }}</td>
+      </tr>
+    {% endfor %}
+  </table> <br>
+<p><input type="submit" value="Compute"></p>
+</form>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TT Maker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Welcome to Smart Time Table Generator</h1>
+    <p>Fill the following details and submit the form. </p>
+    <div class="container">
+      <form class="" action="{{ url_for('view') }}" method="post">
+        <table>
+          <tr>
+            <td><label for="">Weights</label></td>
+            <td><input type="text" name="weights" value="" placeholder="write weights"> <br></td>
+          </tr>
+          <tr>
+            <td><label for="numberOfClasses">Number of Classes</label></td>
+            <td><input type="text" name="numberOfClasses" value="" placeholder="Write number of classes"> <br></td>
+          </tr>
+          <tr>
+            <td><label for="subjects">Subjects</label></td>
+          <td><input type="text" name="subjects" value="" placeholder="Subjects"> <br></td>
+          </tr>
+          <tr>
+          <td><label for="shape">Shape</label></td>
+          <td><input type="text" name="shape" value="" placeholder="Shape params"> <br></td>
+          </tr>
+          <tr>
+            <td></td>
+          <td><input type="submit" name="submit" value="Submit"></td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

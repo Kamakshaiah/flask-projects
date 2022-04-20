@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block jumbo %}
+<h4>This is entry form</h4>
+<div class="">
+  <form class="" action="" method="post">
+    <strong><p>Contact Detials</p></strong>
+    <label for="name">Name</label><input type="text" name="name" value="">
+    <label for="contact_number">Contact Number</label><input type="text" name="contact_number" value="">
+    <label for="email">Email</label><input type="text" name="email" value=""> <hr> <br>
+    <strong><p>Socioeconomic Data</p></strong>
+    <label for="location">Location</label><input type="text" name="location" value="">
+    <label for="age">Age</label><input type="text" name="age" value="">
+    <label for="salary">Salary</label><input type="text" name="salary" value=""> <hr> <br>
+    <strong><p>Sales Data</p></strong>
+    <label for="items">Items</label><input type="text" name="items" value="">
+    <label for="itemcat">Item Category</label><input type="text" name="itemcat" value="">
+    <label for="puchase">Amount of Purchase</label><input type="text" name="purchase" value=""> <hr> <br><br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+</div>
+
+
+{% endblock %}

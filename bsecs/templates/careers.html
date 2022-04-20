@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block career %}
+
+  <div class="m-5 bg-primary text-white text-center">
+    <h1>Careers</h1>
+    <h4 style="font-family: 'Source Sans Pro', sans-serif;">We are hiring!</h4>
+
+  </div>
+  <p>Please submit your resume by filling following form. </p>
+  <div class="row">
+    <div class="col-6">
+      <form class="border border-primary" action="index.html" method="post">
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value=""></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" value=""></td>
+          </tr>
+          <tr>
+            <td>Mobile</td>
+            <td><input type="text" name="mobile" value=""></td>
+          </tr>
+          <tr>
+              <td>Upload Resume</td>
+              <td>
+                <input class="btn btn-primary" type="file" name="" value="File Upload">
+              </td>
+          </tr>
+
+        </table>
+
+
+      </form>
+      <div class="ml-4 p-4  mr-auto container">
+        <input type="button" class="btn btn-primary" name="" value="Submit">
+      </div>
+    </div>
+
+  <div class="container text-center col-6">
+    <img src="static/hiring.jpeg" alt="">
+  </div>
+  </div>
+
+
+
+{% endblock %}

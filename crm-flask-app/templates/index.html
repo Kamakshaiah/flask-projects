@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block jumbo %}
+<div class="jumbotron">
+  <h1 class="display-4">CRMApp!</h1>
+    <p class="lead">This is a simple CRM application, which demonstrates <i>forms</i> and <i>dashboards</i>.</p>
+    <hr class="my-4">
+    <p>Go to <a href="{{url_for("entryform")}}">Form</a> to enter data and use <a href="{{ url_for("dashboard") }}">Dashboard</a> to view visuals.</p>
+    <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://github.com/Kamakshaiah" role="button">Learn more</a>
+    </p>
+</div>
+{% endblock %}

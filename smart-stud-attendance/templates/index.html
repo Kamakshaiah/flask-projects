@@ -1,0 +1,6 @@
+<form class="" action="/attendance" method="post">
+{% for i in df['regnos'] %}
+  <p>{{ i }} <input type="checkbox" name="present" value="{{i}}"> <input type="checkbox" name="absent" value="{{i}}"></p>
+{% endfor %}
+<input type="submit" name="Submit" value="Submit">
+</form>

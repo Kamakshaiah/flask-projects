@@ -1,0 +1,15 @@
+<div align="center">
+  <h1>Time Table</h1>
+  <form class="" name="" action="{{ url_for('viewtt')}}" method="post">
+  <table name="ttform">
+    {% for i in tt %}
+    <tr>
+      <td><input name="subvalue" type="text" name="" value="{{ i }}"></td>
+    </tr>
+
+    {% endfor %}
+  </table>
+  <input type="submit" name="" value="OK">
+</form>
+
+</div>

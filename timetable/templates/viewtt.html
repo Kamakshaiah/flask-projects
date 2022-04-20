@@ -1,0 +1,12 @@
+<div style="font-family: Arial; text-align: center;">
+  <h1>Final Time Table </h1>
+  <form class="" action="{{ url_for('ttpdf') }}" method="post">
+    {% for i in form %}
+
+    <p>{{ i }}</p>
+    {% endfor %}
+    <!-- {{ form | safe }}-->
+    <input type="text" name="url" value="" placeholder="Write URL">
+    <input type="submit" name="submit" value="Make File">
+  </form>
+</div>

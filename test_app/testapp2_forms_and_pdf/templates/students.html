@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Students</title>
+  </head>
+  <body>
+    <p>Students attendance form</p>
+    {% for student in students %}
+        <p>{{ student["name"] }} <input type="radio" name="" value="P"> <input type="radio" name="" value="A"> </p>
+    {% endfor %}
+
+    <p><input type="submit" name="" value="Submit"></p>
+  </body>
+</html>
