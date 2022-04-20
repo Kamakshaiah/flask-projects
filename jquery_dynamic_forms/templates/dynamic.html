@@ -1,0 +1,6 @@
+<div class="">
+  <p>Dynamic inputs</p>
+  {% for i in range(val)%}
+    {{i}}th input <input type="text" name="{{i}}" value=""><a href="#">remove</a>  <br>
+  {% endfor %}
+</div>
