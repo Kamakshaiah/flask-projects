@@ -1,0 +1,72 @@
+<html>
+	
+	<head>
+		<style>
+			
+			.row {
+				display: flex;
+					}
+
+			/* Create two equal columns that sits next to each other */
+			.column {
+				flex: 50%;
+				padding: 30px;
+				height: 300px; /* Should be removed. Only for demonstration */
+					}
+		</style>
+	</head>
+	
+	<body>
+		<div class="row">
+			<div class="column">
+				<p><strong>Table</strong></p>
+				{{ out | safe }}
+				<p> <strong> Summaries </strong> </p>
+					{{ out1 | safe }} <br> <br>
+				<p><strong>Columns</strong></p>
+				{{ out2 }}
+				
+			</div>
+			
+			<div class="column">
+				
+				<p> Plot </p>
+					<div class="row">
+						<div class="column">
+							<img src={{ graph1 }} width="300" height="250">
+						</div>
+						<div class="column">
+							<img src={{ graph2 }} width="300" height="250">
+						</div>
+					
+					</div>
+					
+					
+				<p> <strong>T Test</strong></p>
+				
+				<form action="" method="POST">
+					{{ csrf }}
+					<legend>Variables</legend>
+					
+					<div>
+						{{ form.var1.label }} {{ form.var1 }} <br>
+						{{ form.var2.label }} {{form.var2 }} <br>
+						{{ form.submit }}
+						
+						
+					</div>
+					
+				</form>
+				{{ out3 }} <br>
+				{{ ttest }}
+			</div>
+			<div class="column">
+				
+			</div>
+		</div>
+	</body>
+	
+			
+	
+	
+</html>
